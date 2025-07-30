@@ -75,3 +75,9 @@ This section compares **Flat File Systems** and **Relational Databases** across 
 
 ---
 
+# Task 2: DBMS Advantages – Mind Map
+
+<img width="812" height="486" alt="taask2 drawio" src="https://github.com/user-attachments/assets/f507e60b-6662-47ff-a868-93899a29104f" />
+
+---
+
