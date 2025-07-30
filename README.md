@@ -77,7 +77,7 @@ This section compares **Flat File Systems** and **Relational Databases** across 
 
 # Task 2: DBMS Advantages – Mind Map
 
-<img width="812" height="486" alt="taask2 drawio" src="https://github.com/user-attachments/assets/f507e60b-6662-47ff-a868-93899a29104f" />
+<img width="812" height="486" alt="DBMS Advantages – Mind Map" src="https://github.com/user-attachments/assets/f507e60b-6662-47ff-a868-93899a29104f" />
 
 ---
 
@@ -170,3 +170,193 @@ Privileges define what actions a user can perform on database objects.
 - **Granting System Privilege:**  
   ```sql
   GRANT CREATE SESSION TO user1;
+
+---
+
+# Task 3: Types of Databases
+
+Databases form the backbone of most of the modern applications which allow users to store, retrieve and update data in a reliable and efficient manner. They form the foundation not only for personal applications but also for enterprise systems that are more complex. Knowing the different types of databases is one of the main requirements for choosing the appropriate database based on our unique needs.
+
+Databases can be classified based on their structure, usage, storage methods and intended application. Understanding these types will help us choose the best database based on our requirement.
+
+---
+
+## 1. Hierarchical Databases
+Hierarchical databases organize data in a tree-like structure, where each parent record can have multiple child records. This model works well for scenarios where data follows a predefined hierarchical relationship.  
+
+**Example:** IBM's Information Management System (IMS)  
+
+**Advantages:**
+- Simple and fast for straightforward, hierarchical data.
+- Efficient data retrieval when the structure is known in advance.
+
+**Disadvantages:**
+- Lack of flexibility; changes to the hierarchy structure are difficult to implement.
+- Not suitable for complex relationships beyond a parent-child structure.
+
+---
+
+## 2. Network Databases
+Network databases build on the hierarchical model but allow child records to be linked to multiple parent records, creating a web-like structure of interconnected data.  
+
+**Example:** Integrated Data Store (IDS)  
+
+**Advantages:**
+- More flexible than hierarchical models.
+- Supports many-to-many relationships effectively.
+
+**Disadvantages:**
+- Complex to design and manage.
+- Changes to the database schema can be difficult to implement.
+
+---
+
+## 3. Object-Oriented Databases
+These databases store data as objects, including attributes (data) and methods (functions), making them suitable for handling complex data like multimedia and large files.  
+
+**Example:** Berkeley DB  
+
+**Advantages:**
+- Supports complex data types and relationships.
+- Useful for applications requiring complex data models (e.g., CAD, multimedia systems).
+
+**Disadvantages:**
+- Requires knowledge of object-oriented programming.
+- Less widely supported than relational databases.
+
+---
+
+## 4. Relational Databases
+Relational databases store data in **tables** with rows and columns, using **primary keys** and **foreign keys** to establish relationships. They are the most widely used type of database.  
+
+**Examples:** MySQL, PostgreSQL, Oracle Database  
+
+**Advantages:**
+- Structured and easy to use.
+- Supports **ACID** properties for data integrity.
+- Widely adopted and well-documented.
+
+**Disadvantages:**
+- Can be difficult to scale for very large datasets.
+- Requires careful schema design.
+
+---
+
+## 5. NoSQL Databases
+NoSQL (non-relational) databases use flexible data models like key-value pairs, documents, column families, or graphs. They are designed for unstructured or semi-structured data and are highly scalable.  
+
+**Examples:** MongoDB, Cassandra  
+
+**Advantages:**
+- Horizontal scalability (add more servers easily).
+- Handles large volumes of unstructured data.
+- Optimized for high-speed queries.
+
+**Disadvantages:**
+- Limited support for complex transactions.
+- Some lack robust backup mechanisms.
+
+---
+
+## 6. Centralized Databases
+A centralized database is stored and managed at a **single location** (server or data center).  
+
+**Advantages:**
+- Easier to secure and maintain consistency.
+- Reduced redundancy and uniform data source.
+
+**Disadvantages:**
+- Single point of failure.
+- Can become slower with large-scale data.
+
+---
+
+## 7. Distributed Databases
+A distributed database stores data across multiple servers, improving availability and reliability.  
+
+**Advantages:**
+- Improved performance and fault tolerance.
+- Scales horizontally.
+
+**Disadvantages:**
+- Complex to design and manage.
+- Higher cost for infrastructure and synchronization.
+
+---
+
+## 8. Cloud Databases
+Cloud databases operate on virtual environments hosted by cloud service providers, enabling flexible and scalable database operations.
+
+**Examples:** AWS RDS, Google Cloud SQL, Azure SQL  
+
+**Advantages:**
+- High scalability and flexibility.
+- Pay-as-you-go pricing.
+- Managed infrastructure.
+
+**Disadvantages:**
+- Dependence on internet connectivity.
+- Security concerns.
+
+---
+
+## 9. Personal Databases
+Small-scale databases designed for single users, often used for personal or small business needs.
+
+**Examples:** Microsoft Access, SQLite  
+
+**Advantages:**
+- Easy to use.
+- Minimal storage requirements.
+
+**Disadvantages:**
+- Limited scalability.
+- Not suitable for enterprise applications.
+
+---
+
+## 10. Operational Databases
+These databases support day-to-day operations and real-time transactions for organizations.
+
+**Example:** SAP HANA  
+
+**Advantages:**
+- Real-time processing and quick data access.
+- Supports dynamic business operations.
+
+**Disadvantages:**
+- Requires constant maintenance and monitoring.
+
+---
+
+## Database Components
+Key components of a **DBMS**:
+- **Data:** Actual stored information.
+- **Schema:** Database structure.
+- **Query Language:** e.g., SQL for data retrieval & modification.
+- **Indexes:** For faster search.
+- **Transactions:** Ensure data consistency (ACID).
+- **Users:** Admins, developers, and end-users.
+- **Security:** Authentication, authorization, and encryption.
+- **Backup & Recovery:** For disaster management.
+- **Performance Monitoring:** To track and optimize performance.
+
+---
+
+## Real World Applications
+Databases are everywhere—from **eCommerce** (customer & product data) to **enterprise systems** (finance, HR, logistics).  
+Examples include:
+- **Customer data:** usernames, emails, preferences.  
+- **Business data:** product properties, reviews, prices.  
+- **Relationship data:** customers viewing products, purchases, etc.
+
+---
+
+## Conclusion
+- **Relational Databases** are best for structured data and data integrity.  
+- **NoSQL Databases** excel in handling large-scale, unstructured data with high availability.  
+- **Centralized, Distributed, and Cloud** databases provide different levels of scalability, accessibility, and management depending on the needs.
+
+
+
+
