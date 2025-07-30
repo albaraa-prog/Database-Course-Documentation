@@ -435,10 +435,14 @@ Despite the benefits, there are challenges to consider:
 Cloud storage and cloud-based databases have **transformed how organizations manage data** by providing scalability, accessibility, and cost efficiency. However, they also pose challenges such as vendor lock-in, loss of control, and compliance risks.  
 Choosing the right cloud database depends on **business requirements, budget, and long-term strategy**.
 
+---
 
 **Reference:**  
 
-
+1. [Privilege and Roles in DBMS](https://www.geeksforgeeks.org/dbms/privilege-and-roles-in-dbms/) – GeeksforGeeks  
+2. [Difference between File System and DBMS](https://www.geeksforgeeks.org/dbms/difference-between-file-system-and-dbms/) – GeeksforGeeks  
+3. [Types of Databases](https://www.geeksforgeeks.org/dbms/types-of-databases/) – GeeksforGeeks  
+4. [Cloud Databases](https://www.mongodb.com/resources/basics/databases/cloud-databases) – MongoDB  
 
 
 
