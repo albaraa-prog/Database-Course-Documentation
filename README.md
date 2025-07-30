@@ -81,3 +81,92 @@ This section compares **Flat File Systems** and **Relational Databases** across 
 
 ---
 
+# Task 3: Roles in a Database System
+
+In a database project, different roles ensure that the system is designed, implemented, and maintained effectively. Below are the key roles:
+
+## **1. System Analyst**
+- **Responsibilities:**  
+  - Gathers and analyzes business requirements.  
+  - Acts as a bridge between business stakeholders and technical teams.  
+  - Defines the overall scope and objectives of the database system.  
+
+## **2. Database Designer**
+- **Responsibilities:**  
+  - Designs the conceptual, logical, and physical database models.  
+  - Ensures that the database structure supports business needs.  
+  - Defines relationships, keys, and constraints to maintain data integrity.  
+
+## **3. Database Developer**
+- **Responsibilities:**  
+  - Implements the database design using SQL and other database technologies.  
+  - Creates stored procedures, functions, triggers, and views.  
+  - Optimizes queries for better performance.  
+
+## **4. Database Administrator (DBA)**
+- **Responsibilities:**  
+  - Manages database installations, configurations, and upgrades.  
+  - Ensures data security, backup, and recovery strategies.  
+  - Monitors performance and tunes the database for efficiency.  
+
+## **5. Application Developer**
+- **Responsibilities:**  
+  - Builds applications that interact with the database.  
+  - Implements user interfaces and integrates database operations.  
+  - Ensures application-level data validation and processing.  
+
+## **6. BI (Business Intelligence) Developer**
+- **Responsibilities:**  
+  - Designs and develops reporting and analytics solutions.  
+  - Extracts insights from data using dashboards, reports, and visualizations.  
+  - Works with ETL (Extract, Transform, Load) processes for data warehousing.  
+
+---
+
+# Privileges and Roles in DBMS
+
+In Database Management Systems (DBMS), **security** ensures that data is confidential, accurate, and accessible only to authorized users, often summarized by the **CIA triad** (Confidentiality, Integrity, Availability).  
+
+## **Authentication vs Authorization**
+- **Authentication:** Verifying the identity of a user or process.  
+- **Authorization:** Granting permission to access specific database objects in a controlled manner.  
+
+Authorization types:
+- **Read-only**
+- **Read and write**
+- **Execute**
+
+---
+
+## **Privileges**
+Privileges define what actions a user can perform on database objects.  
+
+### **Types of Privileges**
+1. **Database Privileges:**  
+   - Permission to execute SQL statements or access another user's object.  
+   - Example: `CREATE SESSION` to connect to the database.  
+
+2. **System Privileges:**  
+   - Rights to perform actions on the entire system.  
+   - Example: `CREATE`, `ALTER`, `DROP` (affecting database objects globally).  
+   - Used for **DDL (Data Definition Language)** statements.  
+
+3. **Object Privileges:**  
+   - Rights to perform specific actions on a table, function, or package.  
+   - Example: `SELECT`, `INSERT`, `DELETE`, `UPDATE`.  
+   - Used for **DML (Data Manipulation Language)** statements.  
+
+### **Differences Between System and Object Privileges**
+| **System Privileges** | **Object Privileges** |
+|-----------------------|------------------------|
+| Granted by Database Administrators. | Granted by object owners. |
+| Apply to the entire system. | Apply to specific objects. |
+| Used to permit/prevent DDL statements. | Used to permit/prevent DML statements. |
+| Allow managing database and servers. | Allow performing actions on database objects. |
+
+---
+
+### **Syntax for Privileges**
+- **Granting System Privilege:**  
+  ```sql
+  GRANT CREATE SESSION TO user1;
